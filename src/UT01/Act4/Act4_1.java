@@ -1,4 +1,4 @@
-package Act4;
+package UT01.Act4;
 
 import java.io.*;
 
@@ -9,7 +9,7 @@ public class Act4_1 {
         try {
             // Escribir los números en el fichero
             DataOutputStream dos = new DataOutputStream(
-                    new FileOutputStream("src/Act4/numeros.dat")
+                    new FileOutputStream("src/UT01.Act4/numeros.dat")
             );
 
             for (int i = 0; i < 100; i++) {
@@ -20,7 +20,7 @@ public class Act4_1 {
 
             // Leer los números del fichero
             DataInputStream dis = new DataInputStream(
-                    new FileInputStream("src/Act4/numeros.dat")
+                    new FileInputStream("src/UT01.Act4/numeros.dat")
             );
 
             for (int i = 0; i < 100; i++) {

@@ -1,10 +1,10 @@
-package EjerciciosBinarios.PDF.Ejercicio1;
+package UT01.EjerciciosBinarios.PDF.Ejercicio1;
 
 import java.io.*;
 import java.util.Scanner;
 
 public class Ejercicio1 {
-    private static final String RUTA_FICHERO = "src/EjerciciosBinarios/PDF/Ejercicio1/";
+    private static final String RUTA_FICHERO = "src/UT01.EjerciciosBinarios/PDF/Ejercicio1/";
     private static final String NOMBRE_FICHERO = "num_aleat.bin";
     static void main() {
         Scanner sc = new Scanner(System.in);

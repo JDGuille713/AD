@@ -1,4 +1,4 @@
-package EjerciciosBinarios.Apuntes.Ejercicio2;
+package UT01.EjerciciosBinarios.Apuntes.Ejercicio2;
 
 import java.io.Serializable;
 

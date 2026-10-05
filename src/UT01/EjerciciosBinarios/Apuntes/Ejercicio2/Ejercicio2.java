@@ -1,9 +1,9 @@
-package EjerciciosBinarios.Apuntes.Ejercicio2;
+package UT01.EjerciciosBinarios.Apuntes.Ejercicio2;
 
 import java.io.*;
 
 public class Ejercicio2 {
-    private final static String RUTA_FICHERO = "src/EjerciciosBinarios/Apuntes/Ejercicio2/";
+    private final static String RUTA_FICHERO = "src/UT01.EjerciciosBinarios/Apuntes/Ejercicio2/";
     private final static String NOMBRE_FICHERO = "personas.dat";
     static void main() {
         Alumno[] personas = {

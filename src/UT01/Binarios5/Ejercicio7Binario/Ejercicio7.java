@@ -1,4 +1,4 @@
-package Ejercicio7Binario;
+package UT01.Binarios5.Ejercicio7Binario;
 
 import java.io.*;
 

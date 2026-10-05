@@ -1,10 +1,10 @@
-package EjerciciosBinarios.PDF.Ejercicio2;
+package UT01.EjerciciosBinarios.PDF.Ejercicio2;
 
 import java.io.*;
 import java.util.Scanner;
 
 public class Ejercicio2 {
-    private final static String RUTA_FICHERO = "src/EjerciciosBinarios/PDF/Ejercicio2/";
+    private final static String RUTA_FICHERO = "src/UT01.EjerciciosBinarios/PDF/Ejercicio2/";
     private static final String NOMBRE_FICHERO = "coches.bin";
 
     static void main() {

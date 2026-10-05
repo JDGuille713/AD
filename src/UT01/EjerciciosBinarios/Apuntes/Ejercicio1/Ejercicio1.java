@@ -1,9 +1,9 @@
-package EjerciciosBinarios.Apuntes.Ejercicio1;
+package UT01.EjerciciosBinarios.Apuntes.Ejercicio1;
 
 import java.io.*;
 
 public class Ejercicio1 {
-    private static final String RUTA_FICHERO = "src/EjerciciosBinarios/Apuntes/Ejercicio1/";
+    private static final String RUTA_FICHERO = "src/UT01.EjerciciosBinarios/Apuntes/Ejercicio1/";
     private static final String NOMBRE_FICHERO = "1_50.dat";
     static void main() {
         try (DataOutputStream escribir = new DataOutputStream(new FileOutputStream(RUTA_FICHERO + NOMBRE_FICHERO))) {
