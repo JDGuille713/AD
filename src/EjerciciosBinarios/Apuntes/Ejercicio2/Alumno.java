@@ -2,14 +2,14 @@ package EjerciciosBinarios.Apuntes.Ejercicio2;
 
 import java.io.Serializable;
 
-public class Persona implements Serializable {
+public class Alumno implements Serializable {
     String nombre = "";
     Double notaMedia;
 
-    public Persona() {
+    public Alumno() {
     }
 
-    public Persona(String nombre, Double notaMedia) {
+    public Alumno(String nombre, Double notaMedia) {
         this.nombre = nombre;
         this.notaMedia = notaMedia;
     }
