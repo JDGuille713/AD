@@ -1,11 +1,10 @@
-package UT01.Aleatorio6;
+package UT01.EjemploAleatorio6;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public class Ejercicio6 {
-    private static final String RUTA_FICHERO = "src/UT01/Aleatorio6/";
+    private static final String RUTA_FICHERO = "src/UT01/EjemploAleatorio6/";
     private static final String NOMBRE_FICHERO = "empleados.dat";
     static void main() {
         int[] identificadores = {1, 2, 3, 4};
@@ -30,5 +29,29 @@ public class Ejercicio6 {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        try (RandomAccessFile fichero = new
+                RandomAccessFile(RUTA_FICHERO + NOMBRE_FICHERO, "r")) {
+            while (fichero.getFilePointer() < fichero.length()) {
+
+                int identificador = fichero.readInt();
+
+                char[] apellido = new char[10];
+                for (int i = 0; i < apellido.length; i++) {
+                    apellido[i] = fichero.readChar();
+                }
+
+                int departamento = fichero.readInt();
+                // Lee salario
+                double salario = fichero.readDouble();
+                System.out.println("Id: " + identificador
+                        + ", Apellido: " + new String(apellido).trim()
+                        + ", Departamento: " + departamento
+                        + ", Salario: " + salario);
+            }
+        } catch (IOException e) {
+            System.out.println("Error al leer el fichero.");
+        }
+
     }
 }
