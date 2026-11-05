@@ -7,6 +7,15 @@ public class ConexionBD {
     public static final String USER = "root";
     public static final String PASSWORD = "root";
 
+    public void conectar() {
+        try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
+            System.out.println("Conexion correcta.");
+
+        } catch (SQLException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+
     public static Connection getConexion() {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
