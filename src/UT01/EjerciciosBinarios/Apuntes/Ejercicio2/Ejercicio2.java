@@ -3,9 +3,9 @@ package UT01.EjerciciosBinarios.Apuntes.Ejercicio2;
 import java.io.*;
 
 public class Ejercicio2 {
-    private final static String RUTA_FICHERO = "src/UT01.EjerciciosBinarios/Apuntes/Ejercicio2/";
+    private final static String RUTA_FICHERO = "src/UT01/EjerciciosBinarios/Apuntes/Ejercicio2/";
     private final static String NOMBRE_FICHERO = "personas.dat";
-    static void main() {
+    public static void main(String[] args) {
         Alumno[] personas = {
                 new Alumno("Ana", 7.5),
                 new Alumno("Gabriel", 4.5),
@@ -18,7 +18,7 @@ public class Ejercicio2 {
                     escribir.writeObject(personas[i]);
                 }
             } catch (IOException e) {
-                System.out.println("Error");
+                System.out.println("Error al escribir");
             }
 
             try (ObjectInputStream leer = new ObjectInputStream(new FileInputStream(RUTA_FICHERO + NOMBRE_FICHERO))) {
@@ -27,7 +27,7 @@ public class Ejercicio2 {
                     System.out.println(personaLeida);
                 }
             } catch (IOException | ClassNotFoundException e) {
-                System.out.println("Error");
+                System.out.println("Error al leer");
             }
     }
 }
